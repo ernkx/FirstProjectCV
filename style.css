@@ -1,0 +1,378 @@
+:root {
+    --bg: #222831;
+    --text: #EEEEEE;
+    --hlb: #00ADB5;
+    --hlg: #393E46;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+header {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    display: block;
+    position: relative;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* -webkit-text-stroke: 0.05vw #00ADB5; */
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid var(--hlb);
+    margin: 96px;
+    padding: 0;
+
+  }
+
+  .page-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-left: 160px;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    background-color: var(--bg);
+    z-index: 1;
+  }
+  .site-navigation {
+    display: flex;
+  }
+
+  .site-navigation-item {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text);
+    padding: 24px;
+    position: relative;
+    letter-spacing: 2px;
+  }
+
+.site-navigation-link {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+    position: relative;
+    padding: 0 10px;
+}
+
+.site-navigation-item a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--hlb);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.site-navigation-item a:hover:after {
+    width: 100%;
+}
+
+.site-navigation-item a:hover {
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.typing-demo {
+    width: 100%;
+    animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.text-highlight-blue {
+    color: var(--hlb);
+    font-weight: 600;
+}
+.text-highlight-gray {
+    color: var(--hlg);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 32px;
+}
+
+.about-me-photo {
+    width: 225px;
+    height: 225px;
+    border: 5px solid;
+    border-color: var(--hlb);
+    border-radius: 50%;
+}
+
+.about-me-title {
+    margin: 8px 0 32px 0;
+    font-size: 56px;
+}
+
+.about-me-info {
+    display: inline-block;
+    position: relative;
+    margin-left: 12px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 96px;
+    margin-bottom: 24px;
+}
+
+.skills {
+    margin: 5% 160px 5% 160px;
+    letter-spacing: 2px;
+}
+
+.skills-type {
+    display: grid;
+    color: var(--hlb);
+    font-size: 24px;
+    font-weight: 600;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.skills-level {
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.experience {
+    margin: 5% 160px 5% 160px;
+    letter-spacing: 2px;
+}
+
+.experience-list {
+    display: flex;
+    position: relative;
+}
+
+.experience-year {
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.experience-company {
+    font-weight: 600;
+}
+
+.experience-location {
+    font-style: italic;
+}
+
+.experience-title {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.experience-responsibilities {
+    display: flex;
+    position: relative;
+    padding-left: 100px;
+    margin-left: 100px;
+    letter-spacing: 3px;
+}
+
+.experience-responsibilities-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-left: 100px;
+    margin-left: 100px;
+}
+
+.education {
+    margin: 5% 160px 5% 160px;
+    letter-spacing: 2px;
+}
+
+.education-title {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.education-item {
+    display: grid;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--hlb);
+    grid-template-columns: 2fr 1fr 3fr 2fr;
+    column-gap: 156px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.education-item-name {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 2fr;
+    column-gap: 156px;
+    position: relative;
+    font-size: 20px;
+}
+.education-institution a {
+    display: inline;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--hlb);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.education-institution a:hover {
+    color: var(--hlb);
+}
+
+.languages {
+    margin: 5% 160px 5% 160px;
+    letter-spacing: 2px;
+}
+
+.languages-type {
+    display: grid;
+    color: var(--hlb);
+    font-size: 24px;
+    font-weight: 600;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.languages-level {
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 12px;
+}
+    
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 80px 160px 24px 160px;
+    letter-spacing: 2px;
+}
+
+.footer{
+    flex-grow: 1;
+    margin: 0 96px 24px 0px;
+}
+
+.footer-links a{
+    flex-grow: 0;
+    display: inline;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    margin: 0 24px 24px 24px;
+}
+
+.footer-links a:hover {
+    color: var(--hlb);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 48px;
+	right: 64px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--hlg);
+	border-radius: 8px;
+	padding: 8px;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: var(--text);
+	font-size: 40px;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: var(--hlb);
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
